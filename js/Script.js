@@ -1,3 +1,6 @@
+console.log("Student Name: Bhargavi Luva");
+console.log("Course: Web Development");
+console.log("Practical 4 Completed");
 const themeBtn = document.getElementById("themeBtn");
 
 if (localStorage.getItem("theme") === "dark") {
