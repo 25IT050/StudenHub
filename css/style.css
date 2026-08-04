@@ -403,34 +403,21 @@ section h3{
     margin-top:15px;
 
 }
-
-
-
-/* =========================
-   ADMIN DASHBOARD
-========================= */
-
-
 .dashboard-container .card p{
-
     font-size:20px;
 
     font-weight:bold;
-
 }
 .dark-mode{
     background:#000;
     color:#fff;
 }
-
 .dark-mode header{
     background:#111;
 }
-
 .dark-mode nav{
     background:#222;
 }
-
 .dark-mode section,
 .dark-mode article,
 .dark-mode aside,
@@ -439,11 +426,9 @@ section h3{
     background:#1e1e1e;
     color:#fff;
 }
-
 .dark-mode footer{
     background:#111;
 }
-
 .dark-mode h1,
 .dark-mode h2,
 .dark-mode h3,
@@ -452,19 +437,16 @@ section h3{
 .dark-mode label{
     color:#fff;
 }
-
 .dark-mode input,
 .dark-mode textarea{
     background:#333;
     color:#fff;
     border:1px solid #555;
 }
-
 .dark-mode button{
     background:#0d6efd;
     color:#fff;
 }
-
 .dark-mode button:hover{
     background:#084298;
 }
@@ -477,7 +459,6 @@ section h3{
     align-items:center;
     font-weight:bold;
 }
-
 .notification button{
     background:red;
     color:white;
@@ -486,7 +467,6 @@ section h3{
     cursor:pointer;
     border-radius:5px;
 }
-
 .notification button:hover{
     background:darkred;
 }

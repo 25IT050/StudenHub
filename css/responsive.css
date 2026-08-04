@@ -1,67 +1,53 @@
-/* =========================
-   MOBILE RESPONSIVE CSS
-========================= */
-
-
 @media(max-width:768px){
 
+    nav{
+        flex-direction:column;
+    }
 
-/* Navbar */
+    main{
+        grid-template-columns:1fr;
+    }
 
-nav{
+    .dashboard-container{
+        grid-template-columns:1fr;
+    }
 
-    flex-direction:column;
+    .event-container{
+        flex-direction:column;
+    }
 
-}
+    .card{
+        width:100%;
+    }
 
+    header h1{
+        font-size:24px;
+    }
 
+    /* Dark Mode Button */
+    #themeBtn{
+        width:90%;
+        margin:15px auto;
+        display:block;
+        font-size:16px;
+        padding:10px;
+    }
 
-/* Main Grid */
+    /* Notification Banner */
+    .notification{
+        flex-direction:column;
+        text-align:center;
+        gap:10px;
+        padding:12px;
+    }
 
-main{
+    .notification button{
+        width:100%;
+    }
 
-    grid-template-columns:1fr;
-
-}
-
-
-
-/* Dashboard */
-
-.dashboard-container{
-
-    grid-template-columns:1fr;
-
-}
-
-
-
-/* Events */
-
-.event-container{
-
-    flex-direction:column;
-
-}
-
-
-
-.card{
-
-    width:100%;
-
-}
-
-
-
-/* Header */
-
-header h1{
-
-    font-size:24px;
-
-}
-
-
-
+    /* Logo */
+    header img{
+        width:70px;
+        height:auto;
+    }
 }
