@@ -1,4 +1,3 @@
-```html
 <!DOCTYPE html>
 <html lang="en">
 
@@ -17,6 +16,7 @@
 
     <!-- Header -->
     <header>
+
         <img src="../images/logo.png"
              alt="StudentHub Logo"
              style="width:80px; height:auto;">
@@ -25,27 +25,39 @@
             <h1>StudentHub</h1>
             <p>Your Digital Campus Portal</p>
         </div>
+
     </header>
 
 
+    <!-- Hamburger Menu Button -->
+    <button id="menuBtn"
+            type="button"
+            aria-label="Open navigation menu">
+        ☰ Menu
+    </button>
+
+
     <!-- Navigation -->
-    <nav>
-        <a href="index.html">Home</a> |
-        <a href="about.html">About</a> |
-        <a href="register.html">Register</a> |
-        <a href="login.html">Login</a> |
-        <a href="dashboard.html">Dashboard</a> |
-        <a href="events.html">Events</a> |
-        <a href="profile.html">Profile</a> |
-        <a href="contact.html">Contact</a> |
-        <a href="admin.html">Admin</a> |
-        <a href="faq.html">FAQ</a> |
+    <nav id="navMenu">
+
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="register.html">Register</a>
+        <a href="login.html">Login</a>
+        <a href="dashboard.html">Dashboard</a>
+        <a href="events.html">Events</a>
+        <a href="profile.html">Profile</a>
+        <a href="contact.html">Contact</a>
+        <a href="admin.html">Admin</a>
+        <a href="faq.html">FAQ</a>
         <a href="feedback.html">Feedback</a>
+
     </nav>
 
 
     <!-- Notification -->
     <div class="notification" id="notification">
+
         📢 Event Registration for Web Development Workshop is now Open!
 
         <button id="closeBtn"
@@ -53,47 +65,56 @@
                 aria-label="Close notification">
             &times;
         </button>
+
     </div>
 
 
     <!-- Dark / Light Mode Button -->
     <div class="theme-container">
+
         <button id="themeBtn" type="button">
             🌙 Dark Mode
         </button>
+
     </div>
 
 
     <!-- Main Content -->
     <main>
 
+
         <!-- Welcome Section -->
         <section>
+
             <h2>Welcome to StudentHub</h2>
 
             <img src="../images/StudentHub.png"
                  alt="StudentHub">
 
             <p>
-                StudentHub is a digital platform where students can register,
-                participate in events, manage profiles, and access academic
-                information.
+                StudentHub is a digital platform where students can
+                register, participate in events, manage profiles,
+                and access academic information.
             </p>
+
         </section>
 
 
         <!-- Upcoming Workshop -->
         <article>
+
             <h3>Upcoming Workshop</h3>
 
             <p>
                 A Web Development Workshop will be conducted next week.
             </p>
+
         </article>
 
 
         <!-- Latest Notices -->
         <aside>
+
             <h3>Latest Notices</h3>
 
             <ul>
@@ -101,22 +122,157 @@
                 <li>Workshop Registration Open</li>
                 <li>Hackathon Next Month</li>
             </ul>
+
         </aside>
+
+
+        <!-- ========================= -->
+        <!-- FAQ SECTION -->
+        <!-- ========================= -->
+
+        <section class="faq-section">
+
+            <h2>Frequently Asked Questions</h2>
+
+
+            <!-- FAQ 1 -->
+            <div class="faq-item">
+
+                <button class="faq-question" type="button">
+
+                    What is StudentHub?
+
+                </button>
+
+                <p class="faq-answer">
+
+                    StudentHub is a digital campus portal
+                    for students.
+
+                </p>
+
+            </div>
+
+
+            <!-- FAQ 2 -->
+            <div class="faq-item">
+
+                <button class="faq-question" type="button">
+
+                    How can I register for an event?
+
+                </button>
+
+                <p class="faq-answer">
+
+                    You can register for an event from
+                    the Events page.
+
+                </p>
+
+            </div>
+
+
+            <!-- FAQ 3 -->
+            <div class="faq-item">
+
+                <button class="faq-question" type="button">
+
+                    Can I change the website theme?
+
+                </button>
+
+                <p class="faq-answer">
+
+                    Yes. You can switch between Light Mode
+                    and Dark Mode.
+
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- ========================= -->
+        <!-- CONTENT SLIDER -->
+        <!-- ========================= -->
+
+        <section class="slider-section">
+
+            <h2>StudentHub Highlights</h2>
+
+
+            <div class="slider">
+
+
+                <!-- Slide 1 -->
+                <div class="slide active">
+
+                    <h3>Web Development Workshop</h3>
+
+                    <p>
+                        Learn HTML, CSS and JavaScript.
+                    </p>
+
+                </div>
+
+
+                <!-- Slide 2 -->
+                <div class="slide">
+
+                    <h3>Hackathon</h3>
+
+                    <p>
+                        Participate in our upcoming hackathon.
+                    </p>
+
+                </div>
+
+
+                <!-- Slide 3 -->
+                <div class="slide">
+
+                    <h3>Student Events</h3>
+
+                    <p>
+                        Explore upcoming events on StudentHub.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- Slider Buttons -->
+
+            <button id="prevBtn" type="button">
+                Previous
+            </button>
+
+            <button id="nextBtn" type="button">
+                Next
+            </button>
+
+        </section>
+
 
     </main>
 
 
     <!-- Footer -->
     <footer>
-        <p>&copy; 2026 StudentHub. All Rights Reserved.</p>
+
+        <p>
+            &copy; 2026 StudentHub. All Rights Reserved.
+        </p>
+
     </footer>
 
 
     <!-- JavaScript File -->
-    <!-- Body ke bilkul end me -->
     <script src="../js/Script.js"></script>
 
 </body>
 
 </html>
-```

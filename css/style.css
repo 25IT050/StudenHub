@@ -461,3 +461,129 @@ body.dark footer {
 #closeBtn:hover {
     color: #dddddd;
 }
+/* =========================
+   HAMBURGER MENU
+========================= */
+
+#menuBtn {
+    padding: 10px 15px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+#navMenu {
+    display: block;
+}
+
+#navMenu a {
+    margin: 5px;
+}
+
+
+/* =========================
+   FAQ
+========================= */
+
+.faq-section {
+    margin: 30px auto;
+    max-width: 700px;
+}
+
+.faq-question {
+    width: 100%;
+    padding: 15px;
+    text-align: left;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.faq-answer {
+    display: none;
+    padding: 15px;
+}
+
+.faq-answer.show {
+    display: block;
+}
+
+
+/* =========================
+   SLIDER
+========================= */
+
+.slider-section {
+    text-align: center;
+    margin: 30px auto;
+    max-width: 700px;
+}
+
+.slider {
+    padding: 30px;
+    border: 1px solid #ccc;
+    min-height: 120px;
+}
+
+.slide {
+    display: none;
+}
+
+.slide.active {
+    display: block;
+}
+
+.slider-section button {
+    padding: 10px 15px;
+    margin: 10px;
+    cursor: pointer;
+}
+/* =========================
+   HAMBURGER MENU
+========================= */
+
+#menuBtn {
+    padding: 10px 15px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+#navMenu {
+    display: none;
+}
+
+#navMenu.show {
+    display: block;
+}
+
+#navMenu a {
+    display: inline-block;
+    margin: 5px;
+}
+/* =========================
+   FAQ - FULL WIDTH
+========================= */
+
+.faq-section {
+    grid-column: 1 / -1;
+    width: 100%;
+    box-sizing: border-box;
+    margin-top: 30px;
+}
+
+.faq-question {
+    width: 100%;
+    padding: 15px;
+    text-align: left;
+    cursor: pointer;
+    border: none;
+    margin-top: 10px;
+}
+
+.faq-answer {
+    display: none;
+    padding: 15px;
+    margin: 0;
+}
+
+.faq-answer.show {
+    display: block;
+}
