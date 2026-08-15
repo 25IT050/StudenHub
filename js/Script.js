@@ -54,23 +54,26 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
 
-    // ========================================
-    // HAMBURGER MENU
-    // ========================================
+   // ========================================
+// HAMBURGER MENU
+// ========================================
 
-    const menuBtn = document.getElementById("menuBtn");
-    const navMenu = document.getElementById("navMenu");
+const menuBtn = document.getElementById("menuBtn");
+const navMenu = document.getElementById("navMenu");
 
-    if (menuBtn && navMenu) {
+if (menuBtn && navMenu) {
 
-        menuBtn.addEventListener("click", function () {
+    menuBtn.onclick = function () {
 
-            navMenu.classList.toggle("show");
+        if (navMenu.style.display === "block") {
+            navMenu.style.display = "none";
+        } else {
+            navMenu.style.display = "block";
+        }
 
-        });
+    };
 
-    }
-
+}
 
     // ========================================
     // FAQ
