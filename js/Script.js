@@ -1,27 +1,66 @@
-console.log("Student Name: Bhargavi Luva");
-console.log("Course: Web Development");
-console.log("Practical 4 Completed");
-const themeBtn = document.getElementById("themeBtn");
+document.addEventListener("DOMContentLoaded", function () {
 
-if (localStorage.getItem("theme") === "dark") {
-    document.body.classList.add("dark-mode");
-    themeBtn.textContent = "☀️ Light Mode";
-}
+    // ========================================
+    // DARK / LIGHT MODE
+    // ========================================
 
-themeBtn.addEventListener("click", () => {
-    document.body.classList.toggle("dark-mode");
+    const themeBtn = document.getElementById("themeBtn");
 
-    if (document.body.classList.contains("dark-mode")) {
-        localStorage.setItem("theme", "dark");
+    // Page load hone par saved theme check karo
+    const savedTheme = localStorage.getItem("theme");
+
+    if (savedTheme === "dark") {
+        document.body.classList.add("dark");
         themeBtn.textContent = "☀️ Light Mode";
     } else {
-        localStorage.setItem("theme", "light");
+        document.body.classList.remove("dark");
         themeBtn.textContent = "🌙 Dark Mode";
     }
-});
-const closeBtn = document.getElementById("closeBtn");
-const notification = document.getElementById("notification");
 
-closeBtn.addEventListener("click", function () {
-    notification.style.display = "none";
+
+    // Dark / Light button
+    themeBtn.addEventListener("click", function () {
+
+        document.body.classList.toggle("dark");
+
+        // Dark mode
+        if (document.body.classList.contains("dark")) {
+
+            themeBtn.textContent = "☀️ Light Mode";
+
+            // Browser me theme save karo
+            localStorage.setItem("theme", "dark");
+
+        }
+
+        // Light mode
+        else {
+
+            themeBtn.textContent = "🌙 Dark Mode";
+
+            // Browser me theme save karo
+            localStorage.setItem("theme", "light");
+
+        }
+
+    });
+
+
+    // ========================================
+    // NOTIFICATION CLOSE
+    // ========================================
+
+    const closeBtn = document.getElementById("closeBtn");
+    const notification = document.getElementById("notification");
+
+    if (closeBtn && notification) {
+
+        closeBtn.addEventListener("click", function () {
+
+            notification.style.display = "none";
+
+        });
+
+    }
+
 });

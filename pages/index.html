@@ -1,66 +1,99 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>StudentHub - Home</title>
 
+    <!-- CSS Files -->
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/responsive.css">
-    
 </head>
+
 <body>
+
+    <!-- Header -->
     <header>
-   
-       <script src="../js/Script.js" defer></script> 
-    <img src="../images/logo.png" alt="Logo" style="width:80px; height:auto;">
-    <div>
-        <h1>StudentHub</h1>
-        <p>Your Digital Campus Portal</p>
-       
-    </div>
+        <img src="../images/logo.png"
+             alt="StudentHub Logo"
+             style="width:80px; height:auto;">
+
+        <div>
+            <h1>StudentHub</h1>
+            <p>Your Digital Campus Portal</p>
+        </div>
     </header>
 
-    <nav>
-        <a href="index.html">Home</a>|
-        <a href="about.html">About</a>|
-        <a href="register.html">Register</a>|
-        <a href="login.html">Login</a>|
-        <a href="dashboard.html">Dashboard</a>|
-        <a href="events.html">Events</a>|
-        <a href="profile.html">Profile</a>|
-        <a href="contact.html">Concact</a>|
-        <a href="admin.html">Admin</a>|
-        <a href="faq.html">FAQ</a>|
-        <a href="feedback.html">Feedback</a>
-         
-    </nav>
-    <div class="notification" id="notification">
-    📢 Event Registration for Web Development Workshop is now Open!
-    <button id="closeBtn">&times;</button>
-</div>
-     <button id="themeBtn">🌙 Dark Mode</button>
 
+    <!-- Navigation -->
+    <nav>
+        <a href="index.html">Home</a> |
+        <a href="about.html">About</a> |
+        <a href="register.html">Register</a> |
+        <a href="login.html">Login</a> |
+        <a href="dashboard.html">Dashboard</a> |
+        <a href="events.html">Events</a> |
+        <a href="profile.html">Profile</a> |
+        <a href="contact.html">Contact</a> |
+        <a href="admin.html">Admin</a> |
+        <a href="faq.html">FAQ</a> |
+        <a href="feedback.html">Feedback</a>
+    </nav>
+
+
+    <!-- Notification -->
+    <div class="notification" id="notification">
+        📢 Event Registration for Web Development Workshop is now Open!
+
+        <button id="closeBtn"
+                type="button"
+                aria-label="Close notification">
+            &times;
+        </button>
+    </div>
+
+
+    <!-- Dark / Light Mode Button -->
+    <div class="theme-container">
+        <button id="themeBtn" type="button">
+            🌙 Dark Mode
+        </button>
+    </div>
+
+
+    <!-- Main Content -->
     <main>
+
+        <!-- Welcome Section -->
         <section>
             <h2>Welcome to StudentHub</h2>
-             <img src="../images/StudentHub.png"alt="logo">
+
+            <img src="../images/StudentHub.png"
+                 alt="StudentHub">
+
             <p>
                 StudentHub is a digital platform where students can register,
-                participate in events,manage profiles, and access academic information.
+                participate in events, manage profiles, and access academic
+                information.
             </p>
         </section>
 
+
+        <!-- Upcoming Workshop -->
         <article>
             <h3>Upcoming Workshop</h3>
 
             <p>
-                A Web Devlopment Workshop will be conducted next week.
+                A Web Development Workshop will be conducted next week.
             </p>
-
         </article>
-        <aside>
 
+
+        <!-- Latest Notices -->
+        <aside>
             <h3>Latest Notices</h3>
 
             <ul>
@@ -68,11 +101,22 @@
                 <li>Workshop Registration Open</li>
                 <li>Hackathon Next Month</li>
             </ul>
-
         </aside>
+
     </main>
+
+
+    <!-- Footer -->
     <footer>
         <p>&copy; 2026 StudentHub. All Rights Reserved.</p>
     </footer>
+
+
+    <!-- JavaScript File -->
+    <!-- Body ke bilkul end me -->
+    <script src="../js/Script.js"></script>
+
 </body>
+
 </html>
+```

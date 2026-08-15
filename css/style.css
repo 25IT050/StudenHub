@@ -263,7 +263,7 @@ section h3{
 
     font-weight:bold;
 }
-.dark-mode{
+/*.dark-mode{
     background:#000;
     color:#fff;
 }
@@ -324,4 +324,140 @@ section h3{
 }
 .notification button:hover{
     background:darkred;
+}*/
+ /* ========================================
+    DARK / LIGHT MODE
+ ======================================== */
+
+body {
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+
+/* ========================================
+   DARK MODE
+======================================== */
+
+body.dark {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+
+/* Header */
+body.dark header {
+    background-color: #1e1e1e;
+    color: #ffffff;
+}
+
+
+/* Navigation */
+body.dark nav {
+    background-color: #1e1e1e;
+    color: #ffffff;
+}
+
+
+/* Navigation Links */
+body.dark nav a {
+    color: #ffffff;
+}
+
+
+/* Main content */
+body.dark main {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+
+/* Section */
+body.dark section {
+    background-color: #1e1e1e;
+    color: #ffffff;
+}
+
+
+/* Article */
+body.dark article {
+    background-color: #1e1e1e;
+    color: #ffffff;
+}
+
+
+/* Aside */
+body.dark aside {
+    background-color: #1e1e1e;
+    color: #ffffff;
+}
+
+
+/* Headings */
+body.dark h1,
+body.dark h2,
+body.dark h3,
+body.dark p,
+body.dark li {
+    color: #ffffff;
+}
+
+
+/* Footer */
+body.dark footer {
+    background-color: #1e1e1e;
+    color: #ffffff;
+}
+
+
+/* ========================================
+   DARK / LIGHT BUTTON
+======================================== */
+
+#themeBtn {
+    padding: 10px 18px;
+    margin: 10px 20px;
+
+    border: none;
+    border-radius: 6px;
+
+    background-color: #333333;
+    color: #ffffff;
+
+    cursor: pointer;
+    font-size: 15px;
+
+    transition: 0.3s;
+}
+
+#themeBtn:hover {
+    background-color: #555555;
+}
+
+
+/* ========================================
+   NOTIFICATION
+======================================== */
+
+.notification {
+    background-color: #2196f3;
+    color: white;
+
+    padding: 12px 20px;
+    text-align: center;
+}
+
+#closeBtn {
+    margin-left: 15px;
+
+    border: none;
+    background: transparent;
+
+    color: white;
+    font-size: 22px;
+
+    cursor: pointer;
+}
+
+#closeBtn:hover {
+    color: #dddddd;
 }
