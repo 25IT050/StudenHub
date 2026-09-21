@@ -1,33 +1,242 @@
-<main>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StudentHub - Register</title>
+    
+    <!-- Original CSS File Connections matching your project structure -->
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+    
+    <style>
+        /* Modern form UI enhancements that fit cleanly into any layout */
+        .register-section {
+            max-width: 500px;
+            margin: 40px auto;
+            padding: 30px;
+            background: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+        }
 
-<section>
+        .register-section h2 {
+            margin-top: 0;
+            color: #4f46e5;
+            border-bottom: 2px solid #f3f4f6;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
 
-<h2>Student Registration</h2>
+        .form-group {
+            margin-bottom: 20px;
+        }
 
+        .form-group label {
+            display: block;
+            margin-bottom: 6px;
+            font-weight: 600;
+        }
 
-<form>
+        .form-group input, .form-group select {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            font-size: 14px;
+        }
 
-<label>Name</label>
-<input type="text">
+        .form-group input:focus, .form-group select:focus {
+            outline: 2px solid #4f46e5;
+        }
 
+        .inline-group {
+            display: flex;
+            gap: 15px;
+            align-items: center;
+            margin-top: 5px;
+        }
 
-<label>Email</label>
-<input type="email">
+        .inline-group label {
+            font-weight: normal;
+            margin-bottom: 0;
+            cursor: pointer;
+        }
 
+        /* Error Styles near fields */
+        .error-message {
+            color: #dc2626;
+            font-size: 12px;
+            margin-top: 5px;
+            display: block;
+            min-height: 16px;
+        }
 
-<label>Password</label>
-<input type="password">
+        /* Password Strength Indicator Widget */
+        .strength-container {
+            margin-top: 6px;
+        }
+        .strength-meter {
+            height: 6px;
+            width: 100%;
+            background-color: #e5e7eb;
+            border-radius: 3px;
+            overflow: hidden;
+        }
+        .strength-bar {
+            height: 100%;
+            width: 0%;
+            transition: width 0.3s ease, background-color 0.3s ease;
+        }
+        .strength-text {
+            font-size: 12px;
+            font-weight: bold;
+            margin-top: 4px;
+            display: block;
+        }
 
+        .register-btn {
+            width: 100%;
+            background-color: #4f46e5;
+            color: white;
+            padding: 12px;
+            border: none;
+            border-radius: 4px;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
 
-<button>
-Register
-</button>
+        .register-btn:hover {
+            background-color: #4338ca;
+        }
+    </style>
+</head>
+<body>
 
+    <!-- Header matching your index.html structural layout -->
+    <header>
+        <img src="../images/logo.png" alt="StudentHub Logo" style="width:80px; height:auto;">
+        <div>
+            <h1>StudentHub</h1>
+            <p>Your Digital Campus Portal</p>
+        </div>
+    </header>
 
-</form>
+    <!-- Navigation Menu matching your index.html anchors layout -->
+    <nav id="navMenu">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="register.html" style="font-weight: bold;">Register</a>
+        <a href="login.html">Login</a>
+        <a href="dashboard.html">Dashboard</a>
+        <a href="events.html">Events</a>
+        <a href="profile.html">Profile</a>
+        <a href="faq.html">FAQ</a>
+    </nav>
 
+    <!-- Upgraded Accessible Main Content Window -->
+    <main>
+        <section class="register-section">
+            <h2>Student Registration</h2>
+            
+            <form id="studentRegisterForm" novalidate>
+                
+                <!-- Student Name Field -->
+                <div class="form-group">
+                    <label for="fullName">Full Name</label>
+                    <input type="text" id="fullName" name="fullName" aria-describedby="nameError" required>
+                    <span class="error-message" id="nameError" aria-live="polite"></span>
+                </div>
 
-</section>
+                <!-- Email Address Field -->
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" aria-describedby="emailError" required>
+                    <span class="error-message" id="emailError" aria-live="polite"></span>
+                </div>
 
+                <!-- Mobile Number Field (Added to satisfy practical checklist) -->
+                <div class="form-group">
+                    <label for="mobile">Mobile Number</label>
+                    <input type="tel" id="mobile" name="mobile" aria-describedby="mobileError" required>
+                    <span class="error-message" id="mobileError" aria-live="polite"></span>
+                </div>
 
-</main>
+                <!-- Password Field with strength meter tracker component inside -->
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" aria-describedby="passwordError" required>
+                    <div class="strength-container">
+                        <div class="strength-meter"><div id="strengthBar" class="strength-bar"></div></div>
+                        <span id="strengthText" class="strength-text"></span>
+                    </div>
+                    <span class="error-message" id="passwordError" aria-live="polite"></span>
+                </div>
+
+                <!-- Confirm Password Field -->
+                <div class="form-group">
+                    <label for="confirmPassword">Confirm Password</label>
+                    <input type="password" id="confirmPassword" name="confirmPassword" aria-describedby="confirmPasswordError" required>
+                    <span class="error-message" id="confirmPasswordError" aria-live="polite"></span>
+                </div>
+
+                <!-- Academic Program Dropdowns (Added for practical verification details) -->
+                <div class="form-group">
+                    <label for="course">Course Branch</label>
+                    <select id="course" name="course" aria-describedby="courseError" required>
+                        <option value="">-- Choose Course --</option>
+                        <option value="BTech">B.Tech CSE</option>
+                        <option value="BCA">BCA</option>
+                        <option value="MCA">MCA</option>
+                    </select>
+                    <span class="error-message" id="courseError" aria-live="polite"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="year">Year of Study</label>
+                    <select id="year" name="year" aria-describedby="yearError" required>
+                        <option value="">-- Choose Year --</option>
+                        <option value="1">1st Year</option>
+                        <option value="2">2nd Year</option>
+                        <option value="3">3rd Year</option>
+                        <option value="4">4th Year</option>
+                    </select>
+                    <span class="error-message" id="yearError" aria-live="polite"></span>
+                </div>
+
+                <!-- Gender Radio Group Selection Elements -->
+                <div class="form-group">
+                    <label>Gender</label>
+                    <div class="inline-group">
+                        <label><input type="radio" name="gender" value="Male"> Male</label>
+                        <label><input type="radio" name="gender" value="Female"> Female</label>
+                        <label><input type="radio" name="gender" value="Other"> Other</label>
+                    </div>
+                    <span class="error-message" id="genderError" aria-live="polite"></span>
+                </div>
+
+                <!-- Terms Acknowledgement Box -->
+                <div class="form-group">
+                    <div class="inline-group">
+                        <input type="checkbox" id="terms" name="terms" aria-describedby="termsError" style="width: auto;" required>
+                        <label for="terms">I accept the institutional campus code guidelines</label>
+                    </div>
+                    <span class="error-message" id="termsError" aria-live="polite"></span>
+                </div>
+
+                <button type="submit" class="register-btn">Register</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 StudentHub. All Rights Reserved.</p>
+    </footer>
+
+    <!-- Connected script engine containing validation logic loops -->
+    <script src="../js/register.js"></script>
+</body>
+</html>
