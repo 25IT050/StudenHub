@@ -1,0 +1,17 @@
+[
+  { "id": 1, "category": "Account", "question": "How do I register on StudentHub?", "answer": "Go to the Register page, fill in your details and submit the form to create your account." },
+  { "id": 2, "category": "Account", "question": "How can I reset my password?", "answer": "Click 'Forgot Password' on the Login page and follow the instructions sent to your email." },
+  { "id": 3, "category": "Events", "question": "How can I register for an event?", "answer": "Open the Events page, pick an event and click Register on its card." },
+  { "id": 4, "category": "Events", "question": "Can I cancel my event registration?", "answer": "Yes, go to your Dashboard, open My Events and choose Cancel Registration." },
+  { "id": 5, "category": "Profile", "question": "How do I update my profile picture?", "answer": "Visit the Profile page and click on your avatar to upload a new picture." },
+  { "id": 6, "category": "Profile", "question": "Can I change my course or year after registering?", "answer": "Yes, contact the admin through the Contact page to update academic details." },
+  { "id": 7, "category": "General", "question": "Can I change the website theme?", "answer": "Yes, use the toggle in the navigation bar to switch between Light Mode and Dark Mode." },
+  { "id": 8, "category": "General", "question": "Is StudentHub available on mobile devices?", "answer": "Yes, StudentHub is fully responsive and works on mobile, tablet and desktop." },
+  { "id": 9, "category": "Events", "question": "Where can I see past events?", "answer": "Past events are listed under the Events page once you filter by date." },
+  { "id": 10, "category": "Account", "question": "Is my registration data kept private?", "answer": "Yes, your data is only used for academic and event-related purposes." },
+  { "id": 11, "category": "Support", "question": "Who do I contact for technical issues?", "answer": "Use the Contact page to send a message directly to the support team." },
+  { "id": 12, "category": "Support", "question": "How do I submit feedback about the portal?", "answer": "Go to the Feedback page and fill out the short feedback form." },
+  { "id": 13, "category": "Events", "question": "Will I get a certificate for attending a workshop?", "answer": "Yes, e-certificates are issued through your Dashboard after the event ends." },
+  { "id": 14, "category": "Admin", "question": "How do admins add a new event?", "answer": "Admins can add events from the Admin page using the Add Event form." },
+  { "id": 15, "category": "General", "question": "Does StudentHub send email notifications?", "answer": "Yes, you'll receive email updates for registrations, reminders and announcements." }
+]

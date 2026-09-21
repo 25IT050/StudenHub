@@ -1,0 +1,17 @@
+[
+  { "id": 1, "title": "Web Development Workshop", "category": "Workshops", "date": "2026-09-25", "venue": "Seminar Hall A", "description": "Hands-on session covering HTML5, CSS3 and modern JavaScript." },
+  { "id": 2, "title": "Coding Hackathon 2026", "category": "Competitions", "date": "2026-10-05", "venue": "Computer Lab 3", "description": "24-hour hackathon where teams build a working prototype from scratch." },
+  { "id": 3, "title": "AI & Machine Learning Seminar", "category": "Seminars", "date": "2026-10-12", "venue": "Auditorium", "description": "Industry expert talk on real-world applications of AI and ML." },
+  { "id": 4, "title": "Student Art & Tech Exhibition", "category": "Exhibitions", "date": "2026-09-30", "venue": "Main Lobby", "description": "Showcase of student projects blending design and technology." },
+  { "id": 5, "title": "Cloud Computing Workshop", "category": "Workshops", "date": "2026-11-02", "venue": "Seminar Hall B", "description": "Introductory workshop on AWS, Azure and deployment basics." },
+  { "id": 6, "title": "Robotics Championship", "category": "Competitions", "date": "2026-11-15", "venue": "Sports Complex", "description": "Inter-college robotics competition with obstacle and maze rounds." },
+  { "id": 7, "title": "Cybersecurity Awareness Seminar", "category": "Seminars", "date": "2026-10-20", "venue": "Auditorium", "description": "Talk on safe browsing, phishing, and ethical hacking basics." },
+  { "id": 8, "title": "Photography Exhibition", "category": "Exhibitions", "date": "2026-10-08", "venue": "Art Gallery Wing", "description": "Annual student photography showcase with themed collections." },
+  { "id": 9, "title": "UI/UX Design Workshop", "category": "Workshops", "date": "2026-09-28", "venue": "Design Studio", "description": "Learn wireframing, prototyping and Figma basics in one session." },
+  { "id": 10, "title": "Debate Championship", "category": "Competitions", "date": "2026-10-25", "venue": "Conference Room", "description": "Inter-department debate competition on current affairs topics." },
+  { "id": 11, "title": "Career Guidance Seminar", "category": "Seminars", "date": "2026-11-05", "venue": "Auditorium", "description": "Placement cell session on resumes, interviews and career paths." },
+  { "id": 12, "title": "Science Innovation Expo", "category": "Exhibitions", "date": "2026-11-20", "venue": "Main Lobby", "description": "Exhibition of student innovation and science fair projects." },
+  { "id": 13, "title": "Mobile App Development Workshop", "category": "Workshops", "date": "2026-10-15", "venue": "Computer Lab 1", "description": "Build your first cross-platform app using modern frameworks." },
+  { "id": 14, "title": "Chess Tournament", "category": "Competitions", "date": "2026-09-27", "venue": "Recreation Hall", "description": "Open chess tournament for all students, knockout format." },
+  { "id": 15, "title": "Entrepreneurship Seminar", "category": "Seminars", "date": "2026-11-10", "venue": "Seminar Hall A", "description": "Alumni founders share lessons from building their startups." }
+]

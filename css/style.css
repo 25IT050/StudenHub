@@ -587,3 +587,62 @@ body.dark footer {
 .faq-answer.show {
     display: block;
 }
+
+/* Student Search */
+
+#studentSearch {
+    width: 100%;
+    max-width: 500px;
+    padding: 12px;
+    margin: 20px 0;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+
+/* Student List */
+
+#studentList {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+
+/* Student Card */
+
+#studentList .card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    border-left: 4px solid #4f46e5;
+}
+
+
+/* Student Name */
+
+#studentList .card h3 {
+    color: #4f46e5;
+    margin-bottom: 12px;
+}
+
+
+/* Student Details */
+
+#studentList .card p {
+    margin: 8px 0;
+    font-size: 14px;
+    color: #444;
+}
+
+
+/* No Students Message */
+
+.status-msg {
+    text-align: center;
+    padding: 20px;
+    font-weight: bold;
+}

@@ -1,34 +1,25 @@
+<head>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+</head>
+
 <main>
 
+    <h2>Student Data</h2>
 
-<div class="dashboard-container">
+    <input
+        type="text"
+        id="studentSearch"
+        placeholder="🔍 Search student by name..."
+    >
 
+    <section id="studentList"></section>
 
-<div class="card">
-
-<h3>Total Students</h3>
-<p>500</p>
-
-</div>
-
-
-<div class="card">
-
-<h3>Events</h3>
-<p>20</p>
-
-</div>
-
-
-<div class="card">
-
-<h3>Announcements</h3>
-<p>15</p>
-
-</div>
-
-
-</div>
-
+    <div id="pagination">
+        <button id="prevBtn">Previous</button>
+        <span id="pageNumber">Page 1</span>
+        <button id="nextBtn">Next</button>
+    </div>
 
 </main>
+<script src="../js/students.js" type="module"></script>

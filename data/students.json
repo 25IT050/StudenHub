@@ -1,0 +1,17 @@
+[
+  { "id": 1, "name": "Aarav Shah", "course": "Information Technology", "year": 3, "rollNo": "25IT001", "email": "aarav.shah@studenhub.edu" },
+  { "id": 2, "name": "Priya Mehta", "course": "Computer Engineering", "year": 2, "rollNo": "25CE014", "email": "priya.mehta@studenhub.edu" },
+  { "id": 3, "name": "Rohan Patel", "course": "Information Technology", "year": 4, "rollNo": "23IT022", "email": "rohan.patel@studenhub.edu" },
+  { "id": 4, "name": "Ishita Desai", "course": "Electronics Engineering", "year": 1, "rollNo": "26EC008", "email": "ishita.desai@studenhub.edu" },
+  { "id": 5, "name": "Kunal Joshi", "course": "Computer Engineering", "year": 3, "rollNo": "25CE031", "email": "kunal.joshi@studenhub.edu" },
+  { "id": 6, "name": "Sanya Trivedi", "course": "Information Technology", "year": 2, "rollNo": "25IT045", "email": "sanya.trivedi@studenhub.edu" },
+  { "id": 7, "name": "Aditya Rana", "course": "Mechanical Engineering", "year": 4, "rollNo": "23ME011", "email": "aditya.rana@studenhub.edu" },
+  { "id": 8, "name": "Neha Pandya", "course": "Information Technology", "year": 3, "rollNo": "25IT050", "email": "neha.pandya@studenhub.edu" },
+  { "id": 9, "name": "Yash Solanki", "course": "Computer Engineering", "year": 1, "rollNo": "26CE005", "email": "yash.solanki@studenhub.edu" },
+  { "id": 10, "name": "Diya Kapoor", "course": "Electronics Engineering", "year": 2, "rollNo": "25EC019", "email": "diya.kapoor@studenhub.edu" },
+  { "id": 11, "name": "Vivaan Iyer", "course": "Information Technology", "year": 4, "rollNo": "23IT037", "email": "vivaan.iyer@studenhub.edu" },
+  { "id": 12, "name": "Kavya Nair", "course": "Computer Engineering", "year": 3, "rollNo": "25CE028", "email": "kavya.nair@studenhub.edu" },
+  { "id": 13, "name": "Arjun Verma", "course": "Mechanical Engineering", "year": 2, "rollNo": "25ME016", "email": "arjun.verma@studenhub.edu" },
+  { "id": 14, "name": "Meera Choksi", "course": "Information Technology", "year": 1, "rollNo": "26IT009", "email": "meera.choksi@studenhub.edu" },
+  { "id": 15, "name": "Dev Thakkar", "course": "Electronics Engineering", "year": 4, "rollNo": "23EC024", "email": "dev.thakkar@studenhub.edu" }
+]
