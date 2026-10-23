@@ -10,8 +10,10 @@ $pageTitle = "Student Dashboard - StudentHub";
 $userId = $_SESSION['user_id'];
 
 // Fetch student profile details
+
 $stmt = $pdo->prepare("
-    SELECT u.name, u.email, u.role, u.last_login, s.mobile, s.year, s.gender, c.course_name, c.course_code 
+    SELECT u.name, u.email, u.role, u.last_login,
+           s.mobile, s.year, s.gender, c.course_name
     FROM users u
     LEFT JOIN students s ON u.email = s.email
     LEFT JOIN courses c ON s.course_id = c.course_id

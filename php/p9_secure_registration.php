@@ -11,7 +11,7 @@ $errors = [];
 $successMessage = "";
 
 // Fetch available courses for dropdown
-$courses = $pdo->query("SELECT course_id, course_code, course_name FROM courses ORDER BY course_name ASC")->fetchAll();
+$courses = $pdo->query("SELECT course_id, course_name FROM courses ORDER BY course_name ASC")->fetchAll();
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     // 1. Advanced Extension: CSRF Verification
@@ -90,11 +90,17 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
             // Insert into students table
             $studentInsert = $pdo->prepare("
-                INSERT INTO students (user_id, name, email, mobile, course_id, year, gender, status)
-                VALUES (?, ?, ?, ?, ?, ?, ?, 'active')
+                INSERT INTO students (name, email, mobile, course_id, year, gender)
+                VALUES (?, ?, ?, ?, ?, ?)
             ");
-            $studentInsert->execute([$newUserId, $name, $email, $mobile, $courseId, $year, $gender]);
-
+            $studentInsert->execute([
+    $name,
+    $email,
+    $mobile,
+    $courseId,
+    $year,
+    $gender
+]);
             // Advanced Extension: Audit Log Entry
             log_audit($pdo, $newUserId, 'USER_REGISTERED', "Student account registered successfully: $email");
 

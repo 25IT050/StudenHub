@@ -50,15 +50,17 @@ if ($connectionStatus) {
 // Intermediate Extension: Prepared Statement Demo
 $courseFilter = $_GET['course_code'] ?? 'IT';
 $filteredStudents = [];
+
 if ($connectionStatus) {
     $prepStmt = $pdo->prepare("
-        SELECT s.id, s.name, s.email, s.mobile, c.course_name, s.year, s.gender 
+        SELECT s.id, s.name, s.email, s.mobile,
+               c.course_name, s.year, s.gender
         FROM students s
         INNER JOIN courses c ON s.course_id = c.course_id
-        WHERE c.course_code = ? AND s.status = 'active'
         ORDER BY s.id ASC
     ");
-    $prepStmt->execute([$courseFilter]);
+
+    $prepStmt->execute();
     $filteredStudents = $prepStmt->fetchAll();
 }
 
